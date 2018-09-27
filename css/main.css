@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cover {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover h1 {
+    font-size: 4rem;
+}
+
+.cover button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 32px;
+    font-size: 1.5rem;
+}
+
+.showcase {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    z-index: 99;
+}
+
+.not-visible {
+    .opacity: 0;
+    z-index: -1;
+}
+
+.displayWinner {
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    height: 100px;
+    width: 325px;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 2rem;
+}
+
+.currentPlayer {
+    position: absolute;
+    top: 10%;
+    right: 50px;
+    height: 100px;
+    width: 325px;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 2rem;
+}
+
+.image {
+    position: absolute;
+    top: 25%;
+    left: 50px;
+    height: 325px;
+    width: 325px;
+    /* border: 1px solid black; */
+}
+
+.image img {
+    height: 325px;
+    width: 325px;
+}
+
+.buttons {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 50px;
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 325px;
+    text-align: center;
+}
+
+.buttons h1 {
+    margin: 8px;
+}
+
+.button {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 32px;
+    font-size: 1rem;
+}
+
+.button.red {
+    background-color: red;
+}
+
+.button.green {
+    background-color: green;
+}
+
+.container {
+    position: absolute;
+    display: grid;
+    top: 10%;
+    left: 30%;
+    height: 610px;
+    width: 610px;
+    border: 1px solid black;
+    background-color: #333;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 5px;
+}
+
+.container .white {
+    background-color: #fff;
+}
+
+.container2 {
+    position: absolute;
+    display: none;
+    top: 10%;
+    left: 30%;
+    height: 610px;
+    width: 610px;
+    border: 1px solid black;
+    background-color: #fff;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 h1 {
+    font-size: 4rem;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <div class='cover' id='cover'>
+            <h1>Tic Tac Toe Game</h1>
+            <button onclick='transition()'>Start Game</button>
+        </div>
+        <div class='showcase' id='showcase'>
+            <div class="displayWinner">
+                <p></p>
+            </div>
+            <div class="currentPlayer">
+                <p></p>
+            </div>
+            <div class="image"></div>
+            <div class="buttons">
+                <h1>Want to Play Again?</h1>
+                <button class="button green" onclick='reload()'>Yes</button>
+                <button class="button red" onclick='endGame()'>No</button>
+            </div>
+
+            <div class="container">
+                <div class="box-1 white" id="box-1" onclick='boxClicked(this.id)'></div>
+                <div class="box-2 white" id="box-2" onclick='boxClicked(this.id)'></div>
+                <div class="box-3 white" id="box-3" onclick='boxClicked(this.id)'></div>
+                <div class="box-4 white" id="box-4" onclick='boxClicked(this.id)'></div>
+                <div class="box-5 white" id="box-5" onclick='boxClicked(this.id)'></div>
+                <div class="box-6 white" id="box-6" onclick='boxClicked(this.id)'></div>
+                <div class="box-7 white" id="box-7" onclick='boxClicked(this.id)'></div>
+                <div class="box-8 white" id="box-8" onclick='boxClicked(this.id)'></div>
+                <div class="box-9 white" id="box-9" onclick='boxClicked(this.id)'></div>
+            </div>
+            <div class="container2">
+                <h1>Have a Nice Day</h1>
+            </div>
+        </div>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
